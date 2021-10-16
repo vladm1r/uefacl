@@ -1,13 +1,24 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
+import Logo from '../../components/logo/logo';
 
 import './navbar.scss'
 
-const navbar = () => {
+const Navbar = () => {
 	return (
-		<div>
-
-		</div>
+		<aside className="navbar">
+			<Logo />
+			<nav className="menu">
+				<li className="menu-item">
+					<Link to="/" >Homepage</Link>
+				</li>
+				<li className="menu-item">
+					<Link to="/news" >News</Link>
+				</li>
+			</nav>
+		</aside>
 	)
 }
 
-export default navbar
+export default Navbar

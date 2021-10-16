@@ -60,6 +60,9 @@ module.exports = {
 		filename: filename('js'),
 		path: path.resolve(__dirname, 'dist'),
 	},
+	resolve: {
+		extensions: ['.ts', '.js', '.jsx', '.tsx'],
+	},
 	optimization: optimization(),
 	devServer: {
 		open: isDev,
@@ -81,7 +84,7 @@ module.exports = {
 		new CopyWebpackPlugin({
 			patterns: [
 				{
-					from: path.resolve(__dirname, 'src/favicon.ico'),
+					from: path.resolve(__dirname, 'src/favicon.png'),
 					to: path.resolve(__dirname, 'dist'),
 				}
 			],
@@ -127,8 +130,7 @@ module.exports = {
 				use: {
 					loader: "babel-loader",
 					options: {
-						presets: ['@babel/preset-env'],
-						presets: ['@babel/preset-typescript'],
+						presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
 					}
 				}
 			},
