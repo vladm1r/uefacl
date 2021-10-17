@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import moment from 'moment';
 
 import Title from '../../components/title/title';
+import Loader from '../../components/loader/loader';
 import { useGetNewsQuery } from '../../services/news-api';
 import blankImg from '../../assets/images/blank.jpg'
 
@@ -16,7 +17,7 @@ const News = ({ simplified = false }: NewsProps) => {
 	const { data: news } = useGetNewsQuery({ newsCategory, count: simplified ? 6 : 12 });
 
 	if (!news?.value) return (
-		<h2>Loading...</h2>
+		<Loader />
 	);
 
 	return (

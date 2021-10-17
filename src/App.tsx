@@ -4,7 +4,8 @@ import { Switch, Route, Link } from 'react-router-dom';
 import './app.scss';
 
 import Navbar from './containers/navbar/navbar';
-import Homepage from './containers/homepage/homepage';
+import Standings from './containers/standings/standings';
+import Players from './containers/players/players';
 import News from './containers/news/news';
 
 const App = () => {
@@ -14,9 +15,12 @@ const App = () => {
 			<main className="main">
 				<Switch>
 					<Route exact path="/">
-						<Homepage />
+						{/* <Standings /> */}
 					</Route>
-					<Route exact path="/news">
+					<Route path="/players">
+						{/* <Players /> */}
+					</Route>
+					<Route path="/news">
 						<News />
 					</Route>
 				</Switch>

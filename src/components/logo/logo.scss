@@ -1,6 +1,7 @@
 .logo {
 	display: flex;
 	align-items: flex-end;
+	margin: 0px 0px 30px 0px;
 }
 .logo-icon {
 	max-width: 50px;
@@ -8,6 +9,7 @@
 .logo-text {
 	color: #fff;
 	font-size: 20px;
-	font-weight: 900;
+	letter-spacing: 3px;
+	font-weight: 700;
 	margin: 0px 0px 0px 20px;
 }
