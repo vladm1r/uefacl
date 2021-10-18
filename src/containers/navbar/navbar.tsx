@@ -30,7 +30,7 @@ const Navbar = () => {
 
 	return (
 		<aside className="navbar">
-			<Logo />
+			<Link to="/" ><Logo /></Link>
 			<button className="menu-btn" onClick={() => setActiveMenu(!activeMenu)}></button>
 			{activeMenu &&
 				<nav className="menu">

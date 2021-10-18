@@ -15,7 +15,7 @@ const App = () => {
 			<main className="main">
 				<Switch>
 					<Route exact path="/">
-						{/* <Standings /> */}
+						<Standings />
 					</Route>
 					<Route path="/players">
 						<Players />

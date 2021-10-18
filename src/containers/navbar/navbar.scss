@@ -1,5 +1,9 @@
 @import "../../global.scss";
 
+a {
+	text-decoration: none;
+}
+
 .navbar {
 	min-height: 100vh;
 	flex: 0 0 320px;
