@@ -1,5 +1,10 @@
+@import "./global.scss";
+
 .app {
 	display: flex;
+	@media (max-width: $md2+px) {
+		flex-wrap: wrap;
+	}
 }
 .main {
 	flex: auto;

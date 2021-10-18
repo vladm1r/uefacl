@@ -1,20 +1,60 @@
+@import "../../global.scss";
+
 .navbar {
 	min-height: 100vh;
 	flex: 0 0 320px;
 	padding: 20px;
-	background-color: #162e58;
+	background-color: $maincolor;
+	@media (max-width: $md2+px) {
+		min-height: unset;
+		flex: 1 1 100%;
+	}
+	@media (max-width: $md4+px) {
+		padding: 20px 10px;
+	}
 }
 
 .menu {
-	padding: 20px 0;
-	padding: 0;
+	padding: 0px 0;
+	@media (max-width: $md4+px) {
+		padding: 20px 0px 0px 0px;
+	}
+}
+.menu-list {
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 .menu-item {
 	padding: 13px 0px;
 	font-size: 24px;
+	@media (max-width: $md2+px) {
+		text-align: right;
+	}
+	@media (max-width: $md4+px) {
+		padding: 4px 0;
+		font-size: 16px;
+	}
 	a {
 		color: #fff;
 		text-decoration: none;
+	}
+}
+
+.menu-btn {
+	display: none;
+	border: none;
+	background-color: none;
+	background: url("../../assets/icons/menu.svg") center/cover no-repeat;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	@media (max-width: $md2+px) {
+		display: block;
+		top: 20px;
+		right: 20px;
+	}
+	@media (max-width: $md4+px) {
+		right: 10px;
 	}
 }

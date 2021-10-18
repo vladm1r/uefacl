@@ -18,7 +18,7 @@ const App = () => {
 						{/* <Standings /> */}
 					</Route>
 					<Route path="/players">
-						{/* <Players /> */}
+						<Players />
 					</Route>
 					<Route path="/news">
 						<News />

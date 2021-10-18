@@ -1,8 +1,13 @@
+@import "../../global.scss";
+
 .players {
 	padding: 20px;
 	max-width: 1800px;
 	height: 100%;
 	margin: 0px auto;
+	@media (max-width: $md4+px) {
+		padding: 20px 10px;
+	}
 }
 .players-list {
 	display: flex;
@@ -10,17 +15,28 @@
 	margin: 0 -10px;
 	padding: 0;
 	list-style: none;
+	@media (max-width: $md2+px) {
+		justify-content: center;
+		margin: 0px auto;
+	}
 }
 .players-item {
 	flex: 0 1 200px;
 	padding: 10px;
 	margin: 0px 0px 20px 0px;
+	@media (max-width: $md4+px) {
+		flex: 0 1 150px;
+		margin: 0px 0px 10px 0px;
+	}
 }
 .players-item-body {
 }
 .players-item-img-cont {
 	width: 100%;
 	margin: 0px 0px 10px 0px;
+	@media (max-width: $md4+px) {
+		margin: 0px 0px 5px 0px;
+	}
 	img {
 		max-width: 100%;
 	}
@@ -29,10 +45,18 @@
 	font-size: 20px;
 	font-weight: 700;
 	margin: 0px 0px 10px 0px;
+	@media (max-width: $md4+px) {
+		font-size: 16px;
+		margin: 0px 0px 5px 0px;
+	}
 }
 .players-item-position {
 	font-weight: 14;
 	margin: 0px 0px 10px 0px;
+	@media (max-width: $md4+px) {
+		font-size: 12px;
+		margin: 0px 0px 5px 0px;
+	}
 }
 .players-item-team {
 	display: flex;
@@ -44,4 +68,7 @@
 .players-item-team-name {
 	font-size: 14px;
 	margin: 0px 0px 0px 5px;
+	@media (max-width: $md4+px) {
+		font-size: 12px;
+	}
 }

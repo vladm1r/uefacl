@@ -1,8 +1,13 @@
+@import "../../global.scss";
+
 .news {
 	padding: 20px;
 	max-width: 1800px;
 	margin: 0px auto;
 	height: 100%;
+	@media (max-width: $md4+px) {
+		padding: 20px 10px;
+	}
 }
 .news-list {
 	padding: 0;
@@ -20,6 +25,9 @@
 	@media (max-width: 1240px) {
 		flex: 0 1 100%;
 	}
+	@media (max-width: $md4+px) {
+		padding: 5px 10px;
+	}
 	a {
 		text-decoration: none;
 		display: flex;
@@ -32,6 +40,9 @@
 	padding: 20px;
 	height: 100%;
 	transition: box-shadow 0.2s;
+	@media (max-width: $md4+px) {
+		padding: 10px;
+	}
 	&:hover {
 		-webkit-box-shadow: 4px 4px 8px 0px rgba(22, 46, 88, 0.2);
 		-moz-box-shadow: 4px 4px 8px 0px rgba(22, 46, 88, 0.2);
@@ -40,6 +51,9 @@
 }
 .news-item-image-container {
 	margin: 0px 0px 20px 0px;
+	@media (max-width: $md4+px) {
+		margin: 0px 0px 10px 0px;
+	}
 	img {
 		max-width: 100%;
 	}
@@ -48,12 +62,20 @@
 	color: #1b1b1b;
 	font-size: 24px;
 	margin: 0px 0px 20px 0px;
+	@media (max-width: $md4+px) {
+		font-size: 16px;
+		margin: 0px 0px 10px 0px;
+	}
 }
 .news-item-description {
 	font-size: 16px;
 	color: #1b1b1b;
 	margin: 0px 0px 20px 0px;
 	flex: auto;
+	@media (max-width: $md4+px) {
+		font-size: 14px;
+		margin: 0px 0px 20px 0px;
+	}
 }
 .news-item-footer {
 	display: flex;
@@ -71,8 +93,16 @@
 	font-size: 14px;
 	margin: 0px 0px 0px 10px;
 	color: #1b1b1b;
+	@media (max-width: $md4+px) {
+		font-size: 12px;
+		margin: 0px 0px 0px 10px;
+		max-width: 50%;
+	}
 }
 .news-item-date {
 	font-size: 14px;
 	color: #1b1b1b;
+	@media (max-width: $md4+px) {
+		font-size: 12px;
+	}
 }
